@@ -1,19 +1,23 @@
-###SmartBurger
+### SmartBurger
+
 This project is aimed to create custom burger from the given ingredients list.
 
-###Motivation
+### Motivation
+
 This project was designed and created for training purpose.
 
-###Screenshots
-![alt text](https://github.com/Viscontes/smart-burger/screenshots/MainPageIpad 'Main page on Ipad')
+### Screenshots
 
-###Tech/framework used
+![alt text](https://github.com/Viscontes/smart-burger/blob/master/screenshots/MainPageIpad.png 'Main page on Ipad')
+
+### Tech/framework used
+
 *ES6
 *React
 *Redux
 *CSS
 
-###Installation
+### Installation
 
 ```
 npm init
