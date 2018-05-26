@@ -1,0 +1,45 @@
+.Order {
+  display: flex;
+  flex-direction: column;
+  min-width: 30rem;
+  padding: 2rem;
+  margin: 3rem 4rem;
+  border-radius: .1rem;
+  background-image: 
+    linear-gradient(rgba(247, 219, 183, .3), rgba(247, 219, 183, .3)),
+    linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3));
+  background-repeat: no-repeat;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .1);
+}
+
+.OrderHeader {
+  display: inline-block;
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+.OrderInfo {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  border-bottom: .14rem solid  rgba(247, 219, 183, .7);
+}
+
+.Wrapper {
+
+}
+
+.OrderText {
+  padding: .4rem;
+}
+
+.MainInfo {
+  display: inline-block;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.MainInfo:not(:last-child)::after {
+  content: ",";
+  margin-right: .3rem;
+  display: inline-block;
+}

@@ -1,0 +1,74 @@
+.DrawerToggle {
+
+}
+
+.Checkbox {
+  display: none;
+}
+
+.Toggle {
+  height: 4rem;
+  width: 5rem;
+  position: fixed;
+  top: 9rem;
+  right: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(211, 153, 82, 1),rgba(86, 56, 13, 1));
+  box-shadow: .5rem .5rem 1rem rgba(49, 30, 30, 0.2);
+  border-radius: .1rem;
+  z-index: 300;
+  cursor: pointer;
+}
+
+.Toggle:hover {
+  transform: scale(1.1);
+}
+
+.Icon,
+.Icon::before,
+.Icon::after {
+  position: relative;
+  top: 2rem;
+  display: inline-block;
+  width: 4rem;
+  height: .2rem;
+  background-color: #ffffff;
+}
+
+.Icon::before,
+.Icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all .3s;
+}
+
+.Icon::before {
+  top: -.9rem;
+}
+
+.Icon::after {
+  top: .9rem;
+}
+
+.Checkbox:checked ~ .Toggle .Icon {
+  background-color: transparent;
+}
+
+.Checkbox:checked ~ .Toggle .Icon::before {
+  transform: rotate(135deg);
+  top: 0;
+}
+
+.Checkbox:checked ~ .Toggle .Icon::after {
+  transform: rotate(-135deg);
+  top: 0;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .DrawerToggle {
+    display: none;
+  }
+}

@@ -1,0 +1,132 @@
+.Auth {
+  width: 100%;
+  padding: 10rem 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: 
+    linear-gradient(rgba(247, 219, 183, .3), rgba(247, 219, 183, .3)),
+    linear-gradient(rgba(255, 255, 255, .3), rgba(255, 255, 255, .3));
+}
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.FormTitle {
+  display: inline-block;
+  margin-bottom: 4rem;
+  text-transform: uppercase;
+  text-align: center; 
+  font-size: 3.5rem;
+  font-weight: 100;
+  letter-spacing: .2rem;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(rgba(211, 153, 82, 1), rgba(86, 56, 13, 1));
+}
+
+.BtnContainer {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  margin: 3rem 0;
+}
+
+.SignUp {
+  align-self: center;
+  margin: 2rem 0;
+}
+
+.SignUpBtn {
+  display: inline-block;
+  background: none;
+  border: none;
+  border-radius: .1rem;
+  font-size: inherit;
+  color: rgba(143, 94, 30, .8);
+  border-bottom: 1px solid rgba(143, 94, 30, .8);
+  margin-left: .5rem;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.SignUpBtn:hover,
+.SignUpBtn:focus {
+  outline: none;
+  transform: translateY(-.2rem);
+}
+
+.ErrorMessage {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: .5rem;
+  color: orangered;
+}
+
+.Icon {
+  width: 2rem;
+  height: 2rem;
+  fill: orangered;
+}
+
+.Img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.Img::before, 
+.Img::after {
+  content: "";
+  display: inline-block;
+  margin: 2.5rem;
+  background-repeat: no-repeat;
+  width: 35rem;
+  height: 25rem;
+  background-size: cover;
+  box-shadow: 0 2rem 4rem rgba(49, 30, 30, 0.2);
+  border-radius: .2rem;
+}
+
+.Img::before {
+  background-image: url(../../assets/img/burger1.jpg);
+}
+
+.Img::after{
+  background-image: url(../../assets/img/burger2.jpg);
+}
+
+@media only screen and (max-width: 48.75em) {
+  .Auth {
+    padding: 2rem 2.5rem;
+  }
+
+  .FormTitle {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .BtnContainer {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .FormTitle {
+    font-size: 1.7rem;
+  }
+
+  .Img::before, 
+  .Img::after {
+    width: 90vw;
+    margin: 1rem 0;
+  }
+}

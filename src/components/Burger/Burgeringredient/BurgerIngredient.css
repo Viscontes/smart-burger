@@ -1,0 +1,71 @@
+.Burger {
+  width: 40%;
+	margin: auto;
+}
+
+.BreadBottom {
+  height: 18%;
+  width: 80%;
+  margin: 2% auto;
+  background: radial-gradient(#ddb55d, #df872d);
+  box-shadow: inset 0 0 5vmin 0 #a7551d;
+  border-radius: 20% 20% 50% 50%;
+}
+
+.BreadTop {
+  height: 35%;
+  width: 80%;
+  margin: 2% auto;
+  position: relative;
+  background-image:
+    radial-gradient(circle farthest-corner at 79% 31%, #fcf7d7 2%, transparent 0), 
+    radial-gradient(circle farthest-corner at 22% 38%, #fcf7d7 2%, transparent 0), 
+    radial-gradient(circle farthest-corner at 41% 29%, #fcf7d7 2%, hsla(0, 0%, 100%, 0) 0), 
+    radial-gradient(circle farthest-corner at 32% 19%, #fcf7d7 1%, hsla(0, 0%, 100%, 0) 2%), 
+    radial-gradient(circle farthest-corner at 56% 8%, #fcf7d7 1%, hsla(0, 0%, 100%, 0) 2%), 
+    radial-gradient(circle farthest-corner at 55% 44%, #fcf7d7 3%, hsla(0, 0%, 100%, 0) 0), 
+    radial-gradient(circle farthest-corner at 67% 18%, #fcf7d7 2%, transparent 3%),
+    radial-gradient(#ddb55d, #df872d);
+  box-shadow: inset 0 0 5vmin 0 #a7551d;
+  border-radius: 50% 50% 15% 15%;
+}
+
+.Meat {
+  width: 80%;
+  height: 14%;
+  margin: 2% auto;
+  background-color: #4e2c08;
+  background-image: repeating-linear-gradient(136deg, #341c03 11%, hsla(0, 0%, 100%, 0) 14%, rgba(52, 28, 3, .24) 37%, #341c03 39%), linear-gradient(315deg, hsla(0, 0%, 100%, 0), rgba(53, 33, 12, .97) 32%, rgba(150, 53, 8, .05) 57%, #2e1a06 80%, #4e2c08);
+  border-radius: 38% 30% 35% 35%;
+}
+
+.Cheese {
+  width: 90%;
+  height: 5%;
+  margin: 2% auto;
+  background-color: #ffcd40;
+  border-radius: 20px;
+}
+
+.Salad {
+  width: 85%;
+  height: 5%;
+  margin: 2% auto;
+  background-image: 
+    radial-gradient(circle closest-corner at 22% 66%, transparent 17%, rgba(84, 182, 19, .62) 28%, transparent 40%), 
+    repeating-radial-gradient(circle farthest-corner at 32% -10%, transparent 10%, #53c10a 19%, transparent 25%, transparent 41%), 
+    repeating-radial-gradient(circle closest-corner at 61% 134%, transparent, #53c10a 16%, transparent 29%, transparent 69%), 
+    repeating-radial-gradient(circle farthest-side at 51% 38%, transparent 9%, #48a50a 18%, transparent 23%, transparent 48%), 
+    repeating-radial-gradient(circle farthest-corner at 56% -10%, rgba(99, 141, 71, .08) 49%, #638d47 62%, #638d47 75%, transparent 82%);
+  border-radius: 38% 37% 45% 35%;
+}
+
+.Tomato {
+	width: 80%;
+  height: 7%;
+	margin: 2% auto;
+	background-color: #c13a0a;
+  background-image: 
+		radial-gradient(circle farthest-corner at 54% 185%, hsla(0, 0%, 100%, 0), hsla(52, 86%, 92%, .24) 41%, rgba(150, 53, 8, .05) 65%, #c1650a);
+	border-radius: 38% 37% 45% 35%;
+}

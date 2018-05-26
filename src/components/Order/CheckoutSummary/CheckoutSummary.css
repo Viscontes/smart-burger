@@ -1,0 +1,31 @@
+.CheckoutSummary {
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.Text {
+  display: inline-block;
+  padding: 2rem;
+  font-size: 2rem;
+}
+
+.BurgerContainer {
+  margin-bottom: 3rem;
+  width: 100%;
+}
+
+.BtnContainer {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .BtnContainer {
+    width: 100%;
+  }
+}

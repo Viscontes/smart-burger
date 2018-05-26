@@ -1,0 +1,44 @@
+.Title {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.Subtitle {
+  margin-bottom: 1rem;
+  font-size: 1.9rem;
+}
+
+.List {
+  position: relative;
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.Name {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.Wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.Text {
+  text-align: center;
+  padding: .5rem;
+  margin-bottom: .5rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .Title {
+    font-size: 1.4rem;
+  }
+
+  .Subtitle {
+    font-size: 1.3rem;
+  }
+}

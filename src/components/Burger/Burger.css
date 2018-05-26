@@ -1,0 +1,28 @@
+.Burger {
+  width: 35%;
+  margin: auto;
+  padding-top: 2rem;
+  height: 30rem;
+  overflow-y: scroll;
+  text-align: center;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .Burger {   
+    height: 20rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .Burger {   
+    height: 16rem;
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 28.125em) {
+  .Burger {   
+    height: 11rem;
+  }
+}

@@ -1,0 +1,69 @@
+.BuildControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 2rem;
+  margin: 1rem 10vw;
+  border: 1px solid #ddd;
+  border-radius: .2rem;
+  box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .2);
+  transition: all .2s;
+}
+
+.Label {
+  margin-right: 3rem;
+  padding: 1rem;
+  width: 8rem;
+}
+
+.Less, 
+.More {
+  position: relative;
+  display: block;
+  font: inherit;
+  padding: 0 .2rem;
+  margin: 0 5px;
+  border: 1px solid #AA6817;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+}
+
+.Less:disabled,
+.More:disabled {
+  background-color: rgba(172, 153, 128, .8);
+  border: 1px solid #7e7365;
+  color: #ccc;
+  cursor: default;
+}
+
+.Less:hover:disabled,
+.More:hover:disabled {
+  background-color: rgba(172, 153, 128, .8);
+  cursor: not-allowed;
+}
+
+.Less {  
+  background-color: rgba(211, 153, 82, .8);
+}
+
+.More {
+  background-color: rgba(143, 94, 30, .8);
+}
+
+.Less:hover,
+.Less:active {  
+  transform: translateY(-.1rem);
+}
+
+.More:hover,
+.More:active {
+  transform: translateY(-.2rem);
+}
+
+.Icon {
+  transform: translateY(.3rem);
+  padding: .7rem 0;
+  border-radius: 50%;
+}

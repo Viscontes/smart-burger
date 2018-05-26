@@ -1,0 +1,32 @@
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rem;
+  padding-left: 2rem;
+  font-size: 1.4rem;
+  background-color: rgba(0, 0, 0, .25);
+  background-image: 
+    linear-gradient(rgba(247, 219, 183, .5), rgba(247, 219, 183, .5));
+}
+@media only screen and (min-width: 56.25em) {
+  .Toolbar {
+    min-height: 8rem;
+  }
+  .MobileOnly {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 40em) {
+  .Toolbar {
+    margin-top: 1rem;
+  }
+}
+
+@media only screen and (max-width: 31.25em) {
+  .Toolbar {
+    margin-top: 0;
+    padding-left: .5rem;
+  }
+}

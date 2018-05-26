@@ -1,0 +1,101 @@
+.BuildControls {
+  width: 100%;
+  position: relative;
+  background-image: 
+    linear-gradient(-45deg, transparent 50%, rgba(247, 219, 183, .5) 50%),
+    url("../../../assets/img/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  object-fit: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 0;
+}
+
+.Price {
+  margin: 0 2.2rem;
+  text-transform: capitalize;
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 75em) {
+  .BuildControls {
+    background-image:
+      linear-gradient(-70deg, transparent 50%, rgba(247, 219, 183, .5) 50%),
+      url("../../../assets/img/hero.jpg");
+  }
+}
+
+@media only screen and (max-width: 56.25em) {
+  .BuildControls {
+    background-image:
+      linear-gradient(-90deg, transparent 50%, rgba(247, 219, 183, .5) 50%),
+      url("../../../assets/img/hero.jpg");
+  }
+}
+
+@media only screen and (max-width: 43.75em) {
+  .BuildControls {
+    background-image:
+      linear-gradient(rgba(247, 219, 183, .2), rgba(247, 219, 183, .2)),
+      url("../../../assets/img/hero.jpg");
+  }
+  .Price {
+    color: #ffffff;
+  }
+}
+
+.OrderButton {
+  display: inline-block;
+  margin: 0 2rem;
+  margin-bottom: 1rem;
+  padding: 1rem 2.7rem;
+  border-radius: .2rem;
+  transition: all .2s;
+  background-color: rgba(211, 153, 82, .7);
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  animation: pulsate 1s infinite;
+  transition: all .2s;
+}
+
+.OrderButton:hover{
+  transform: translateY(-.3rem);
+  box-shadow: 0 1rem 2rem rgba($color-black, .2);
+}
+
+.OrderButton:active,
+.OrderButton:focus {
+  transform: translateY(-.1rem);
+  box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+  outline: none;
+}
+
+.OrderButton:disabled {
+  text-decoration: none;
+  background-color: rgba(199, 198, 198, .7);
+  cursor: not-allowed;
+  color: #888888;
+  animation: none;
+}
+
+@keyframes pulsate {
+  0% {
+      transform: scale(1);
+      box-shadow: none;
+  }
+
+  50% {
+      transform: scale(1.05);
+      box-shadow: 1rem 1rem 1rem rgba(0, 0, 0, .2);
+  }
+
+  100% {
+      transform: scale(1);
+      box-shadow: none;
+  }
+}

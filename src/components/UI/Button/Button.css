@@ -1,0 +1,48 @@
+.Cancel,
+.Continue {
+  display: inline-block;
+  min-width: 10rem;
+  padding: 1rem 2rem;
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, .2);
+  border: none;
+  border-radius: .1rem;
+  font-size: inherit;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.Cancel:hover,
+.Continue:hover,
+.Cancel:focus,
+.Continue:focus {
+  outline: none;
+  transform: translateY(-.2rem) scale(1.1);
+} 
+
+.Cancel {
+  background-color: rgba(211, 153, 82, .8);
+}
+
+.Continue {
+  background-color: rgba(143, 94, 30, .8);
+  color: #ffffff;
+}
+
+.Cancel:disabled {
+  background-color: rgba(199, 198, 198, .7);
+  cursor: not-allowed;
+  color: #888888;
+}
+
+.Continue:disabled {
+  background-color: rgba(199, 198, 198, .7);
+  cursor: not-allowed;
+  color: #888888;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .Cancel,
+  .Continue {
+    margin-bottom: 1rem;
+  }
+}
