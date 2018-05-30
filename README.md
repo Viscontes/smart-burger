@@ -1,6 +1,7 @@
 ### SmartBurger
 
 This project is aimed to create custom burger from the given ingredients list.
+https://burger-builder-27273.firebaseapp.com/
 
 ### Motivation
 
