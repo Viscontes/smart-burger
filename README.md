@@ -2,7 +2,7 @@
 
 This project is aimed to create custom burger from the given ingredients list.
 
-* https://burger-builder-27273.firebaseapp.com/
+- https://burger-builder-27273.firebaseapp.com/
 
 ### Motivation
 
@@ -14,15 +14,15 @@ This project was designed and created for training purpose.
 
 ### Tech/framework used
 
-* ES6
-* React
-* Redux
-* CSS
+- ES6
+- React
+- Redux
+- CSS
 
 ### Installation
 
 ```
-npm init
+npm install
 npm run build
 npm run start
 ```
